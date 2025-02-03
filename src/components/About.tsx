@@ -1,4 +1,6 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { CloudArrowUpIcon, BriefcaseIcon, CircleStackIcon, LanguageIcon, WrenchIcon, PuzzlePieceIcon, CommandLineIcon } from '@heroicons/react/20/solid'
+
+
 
 function About() {
     return (
@@ -33,13 +35,12 @@ function About() {
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                 <div className="lg:pr-4">
                     <div className="lg:max-w-lg">
-                    <p className="text-base/7 font-semibold text-purple-700">Deploy faster</p>
+                    <p className="text-base/7 font-semibold text-purple-400">Обо мне</p>
                     <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-100 sm:text-5xl">
-                        A better workflow
+                        Привет!
                     </h1>
                     <p className="mt-6 text-xl/8 text-gray-400">
-                        Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam
-                        eget aliquam. Quisque id at vitae feugiat egestas.
+                     Меня зовут <span className='text-purple-400'>Влад</span>, и я занимаюсь веб-разработкой уже 4 года. Моя страсть — это создание современных и удобных интерфейсов, которые решают реальные задачи.
                     </p>
                     </div>
                 </div>
@@ -53,49 +54,64 @@ function About() {
                 </div>
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                 <div className="lg:pr-4">
-                    <div className="max-w-xl text-base/7 text-gray-100 lg:max-w-lg">
+                    <div className="max-w-xl text-base/8 text-gray-100 lg:max-w-lg">
                     <p>
-                        Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                        vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                        erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                        semper sed amet vitae sed turpis id.
+                        Я работаю с современными инструментами и технологиями, чтобы создавать качественные продукты. Вот мой стек:
                     </p>
                     <ul role="list" className="mt-8 space-y-8 text-gray-200">
                         <li className="flex gap-x-3">
-                        <CloudArrowUpIcon aria-hidden="true" className="mt-1 size-5 flex-none text-purple-700" />
-                        <span>
-                            <strong className="font-semibold text-gray-400">Push to deploy.</strong> Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                            blanditiis ratione.
-                        </span>
+                            <LanguageIcon aria-hidden="true" className="mt-1 size-6 flex-none text-purple-400" />
+                            <span>
+                                <strong className="font-semibold text-gray-400">Языки программирования:</strong> JavaScript, TypeScript
+                            </span>
                         </li>
                         <li className="flex gap-x-3">
-                        <LockClosedIcon aria-hidden="true" className="mt-1 size-5 flex-none text-purple-700" />
-                        <span>
-                            <strong className="font-semibold text-gray-400">SSL certificates.</strong> Anim aute id magna aliqua
-                            ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-                        </span>
+                            <CloudArrowUpIcon aria-hidden="true" className="mt-1 size-6 flex-none text-purple-400" />
+                            <span>
+                                <strong className="font-semibold text-gray-400">Frontend/UI:</strong> React, Bootstrap, React Suite, TailwindCSS, TailwindUI
+                            </span>
                         </li>
                         <li className="flex gap-x-3">
-                        <ServerIcon aria-hidden="true" className="mt-1 size-5 flex-none text-purple-700" />
-                        <span>
-                            <strong className="font-semibold text-gray-400">Database backups.</strong> Ac tincidunt sapien
-                            vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-                        </span>
+                            <CommandLineIcon aria-hidden="true" className="mt-1 size-6 flex-none text-purple-400" />
+                            <span>
+                                <strong className="font-semibold text-gray-400">Backend:</strong> Bun, Vite, Hono, Npm, Express
+                            </span>
+                        </li>
+                        <li className="flex gap-x-3">
+                            <WrenchIcon aria-hidden="true" className="mt-1 size-6 flex-none text-purple-400" />
+                            <span>
+                                <strong className="font-semibold text-gray-400">Api:</strong> Axios, Socket.IO, TanStack: Query
+                            </span>
+                        </li>
+                        <li className="flex gap-x-3">
+                            <BriefcaseIcon aria-hidden="true" className="mt-1 size-6 flex-none text-purple-400" />
+                            <span>
+                                <strong className="font-semibold text-gray-400">State Management:</strong> Redux, TanStack: Store
+                            </span>
+                        </li>
+                        <li className="flex gap-x-3">
+                            <CircleStackIcon aria-hidden="true" className="mt-1 size-6 flex-none text-purple-400" />
+                            <span>
+                                <strong className="font-semibold text-gray-400">Базы данных:</strong> PostgreSQL, Drizzle ORM, Sequelize, MongoDB, Mongoose,
+                            </span>
+                        </li>
+                        <li className="flex gap-x-3">
+                            <PuzzlePieceIcon aria-hidden="true" className="mt-1 size-6 flex-none text-purple-400" />
+                            <span>
+                                <strong className="font-semibold text-gray-400">Дополнительно:</strong> React Router, Cloudinary, Multer, PassportJS
+                            </span>
                         </li>
                     </ul>
-                    <p className="mt-8 text-gray-100">
-                        Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-                        fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-                        adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
+                    <p className="mt-8 text-gray-100 text-base/8">
+                        Я постоянно изучаю новые технологии и улучшаю свои навыки, чтобы оставаться в курсе последних трендов. В своей работе я ценю чистый код, модульность и внимание к деталям. Мой опыт включает разработку как небольших лендингов, так и сложных веб-приложений с использованием современных инструментов.
                     </p>
-                    <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-100">No server? No problem.</h2>
+                    {/* <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-100">No server? No problem.</h2>
                     <p className="mt-6 text-gray-100">
                         Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
                         Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
                         tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
                         turpis ipsum eu a sed convallis diam.
-                    </p>
+                    </p> */}
                     </div>
                 </div>
             </div>

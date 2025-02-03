@@ -3,23 +3,18 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-    { name: 'Projects', href: '#projects' },
-    { name: 'Stack', href: '#stack' },
-    { name: 'About', href: '#about' },
-    { name: 'Contacts', href: '#contacts' },
+    { name: 'Главная', href: '#' },
+    { name: 'Обо мне', href: '#about' },
+    { name: 'Проекты', href: '#projects' },
+    { name: 'Контакты', href: '#contacts' },
 ]  
 
 function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="fixed backdrop-blur-xs bg-black/15 inset-x-0 top-0 z-50">
-            <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
-                <div className="flex lg:flex-1">
-                    <a href="#" className="-m-1.5 p-1.5">
-                    Logo
-                    </a>
-                </div>
+        <header className="fixed backdrop-blur-none bg-none lg:backdrop-blur-xs lg:bg-black/15 inset-x-0 top-0 z-50">
+            <nav aria-label="Global" className="flex justify-end lg:justify-center p-6 lg:px-8">
                 <div className="flex lg:hidden">
                     <button
                     type="button"
@@ -35,11 +30,6 @@ function Header() {
                         {item.name}
                     </a>
                     ))}
-                </div>
-                <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    {/* <a href="#" className="text-sm/6 font-semibold">
-                    Log in <span aria-hidden="true">&rarr;</span>
-                    </a>     */}
                 </div>
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -59,28 +49,20 @@ function Header() {
                     </button>
                     </div>
                     <div className="mt-6 flow-root">
-                    <div className="-my-6 divide-y divide-gray-500/10">
-                        <div className="space-y-2 py-6">
-                        {navigation.map((item) => (
-                            <a
-                            key={item.name}
-                            href={item.href}
-                            onClick={() => setMobileMenuOpen(false)}
-                            className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-800"
-                            >
-                            {item.name}
-                            </a>
-                        ))}
+                        <div className="-my-6">
+                            <div className="space-y-2 py-6">
+                            {navigation.map((item) => (
+                                <a
+                                key={item.name}
+                                href={item.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold hover:bg-gray-800"
+                                >
+                                {item.name}
+                                </a>
+                            ))}
+                            </div>
                         </div>
-                        <div className="py-6">
-                        <a
-                            href="#"
-                            className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold hover:bg-gray-800"
-                        >
-                            Log in
-                        </a>
-                        </div>
-                    </div>
                     </div>
                 </DialogPanel>
             </Dialog>

@@ -2,7 +2,7 @@ function Hero() {
 
     return (
         <div id='hero' className="relative isolate lg:px-8 bg-slate-900">
-            <div className="mx-auto max-w-2xl py-48 sm:py-56 lg:py-64 h-auto sm:h-auto lg:h-screen">
+            <div className="mx-auto max-w-2xl py-48 px-5 sm:py-56 lg:py-64 h-auto sm:h-auto lg:h-vh">
             <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-0 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -16,28 +16,27 @@ function Hero() {
           />
         </div>
                 <div className="text-center">
-                    <h1 className="text-5xl font-semibold tracking-tight text-balance sm:text-7xl text-white">
-                        Data to enrich your online business
+                    <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-7xl text-white">
+                        Создаю современные и функциональные веб-приложения
                     </h1>
                     <p className="mt-8 text-lg font-medium text-pretty sm:text-xl/8 text-gray-200">
-                        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                        fugiat veniam occaecat.
+                        Разработчик, который превращает идеи в интуитивно понятные и эффективные цифровые решения.
                     </p>                            
                     <div className="mt-10 flex items-center justify-center gap-x-6">
-                    {/* <a
-                        href="#"
-                        className="rounded-md bg-purple-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-purple-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                        Get started
-                    </a> */}
-                    <a href="#" className="text-sm/6 font-semibold text-purple-400 hover:text-purple-300">
-                        Learn more <span aria-hidden="true">→</span>
-                    </a>
+                        {/* <a
+                            href="#"
+                            className="rounded-md bg-purple-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-purple-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        >
+                            Get started
+                        </a> */}
+                        <a href="#about" className="text-sm/6 font-semibold text-purple-400 hover:text-purple-300">
+                            Узнать больше <span aria-hidden="true">→</span>
+                        </a>
                     </div>
 
                     <div
                     aria-hidden="true"
-                    className="absolute inset-x-0 top-[calc(100%-13rem)] -z-0 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                    className="absolute inset-x-0 top-[calc(100%-13rem)] -z-50 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
                     >
                     <div
                         style={{
