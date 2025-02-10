@@ -1,5 +1,6 @@
 import { CloudArrowUpIcon, BriefcaseIcon, CircleStackIcon, LanguageIcon, WrenchIcon, PuzzlePieceIcon, CommandLineIcon } from '@heroicons/react/20/solid'
 
+import codeBlockImage from '../assets/code_block.svg'
 
 
 function About() {
@@ -48,8 +49,8 @@ function About() {
                 <div className="-mt-10 -ml-10 p-25 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                 <img
                     alt=""
-                    src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png"
-                    className="w-[48rem] max-w-none rounded-xl bg-gray-900 ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem]"
+                    src={codeBlockImage}
+                    className="w-[48rem] max-w-none rounded-2xl sm:w-[57rem] scale-90"
                 />
                 </div>
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
@@ -105,13 +106,6 @@ function About() {
                     <p className="mt-8 text-gray-100 text-base/8">
                         Я постоянно изучаю новые технологии и улучшаю свои навыки, чтобы оставаться в курсе последних трендов. В своей работе я ценю чистый код, модульность и внимание к деталям. Мой опыт включает разработку как небольших лендингов, так и сложных веб-приложений с использованием современных инструментов.
                     </p>
-                    {/* <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-100">No server? No problem.</h2>
-                    <p className="mt-6 text-gray-100">
-                        Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
-                        Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
-                        tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                        turpis ipsum eu a sed convallis diam.
-                    </p> */}
                     </div>
                 </div>
             </div>
