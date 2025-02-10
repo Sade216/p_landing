@@ -3,7 +3,7 @@
 ## Сайт: https://p-landing-gamma.vercel.app
 
 ### Стек:
-##### Vite | React | Tailwindcss | TailwindUI
+Vite | React | Tailwindcss | TailwindUI
 
 ***
 
