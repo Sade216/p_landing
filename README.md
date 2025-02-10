@@ -1,6 +1,6 @@
 # Bun + Vite
 
-## Сайт: https://p-landing-gamma.vercel.app/
+## Сайт: https://p-landing-gamma.vercel.app
 
 ### Стек:
 ##### Vite | React | Tailwindcss | TailwindUI
