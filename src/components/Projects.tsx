@@ -153,12 +153,6 @@ function Projects() {
                                         <strong className="font-semibold text-gray-400">Api:</strong> Ky, OpenWeather, GeoNames
                                     </span>
                                 </li>
-                                <li className="flex gap-x-4">
-                                    <PuzzlePieceIcon aria-hidden="true" className="size-6 flex-none text-purple-400" />
-                                    <span>
-                                        <strong className="font-semibold text-gray-400">Дополнительно:</strong> React Router, Cloudinary, Multer
-                                    </span>
-                                </li>
                             </ul>
                         </div>
                     </div>
