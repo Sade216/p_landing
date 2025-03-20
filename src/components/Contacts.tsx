@@ -13,7 +13,7 @@ function Contacts() {
                         </p>
                     </div>
                     <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2">
-                        <div className="flex flex-col items-start cursor-pointer hover:bg-slate-900/50 rounded-xl p-5">
+                        <a href="mailto:vlad.tok.1997.ds@gmail.com?subject=Связаться&body=Здравствуйте, у меня есть к вам предложение..." className="flex flex-col items-start cursor-pointer hover:bg-slate-900/50 rounded-xl p-5">
                             <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                                 <AtSymbolIcon aria-hidden="true" className="size-6 text-white" />
                             </div>
@@ -21,8 +21,8 @@ function Contacts() {
                             <dd className="mt-2 text-base/7 text-gray-400">
                                 vlad.tok.1997.ds@gmail.com
                             </dd>
-                        </div>
-                        <div className="flex flex-col items-start cursor-pointer hover:bg-slate-900/50 rounded-xl p-5">
+                        </a>
+                        <a href="https://t.me/oile_xd" target="_blank" rel="noopener noreferrer" className="flex flex-col items-start cursor-pointer hover:bg-slate-900/50 rounded-xl p-5" >
                             <div className="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
                                 <AtSymbolIcon aria-hidden="true" className="size-6 text-white" />
                             </div>
@@ -30,7 +30,7 @@ function Contacts() {
                             <dd className="mt-2 text-base/7 text-gray-400">
                                 @oile_xd
                             </dd>
-                        </div>
+                        </a>
                     </dl>
                     </div>
                 </div>
